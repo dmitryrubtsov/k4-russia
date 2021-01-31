@@ -1,0 +1,1 @@
+<input type="hidden" name="{$Field.name}" value="{$Field.value}" />

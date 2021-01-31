@@ -1,0 +1,1 @@
+{$BannerRight|unescape}

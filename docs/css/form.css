@@ -1,0 +1,238 @@
+#site-overlay {
+	position: fixed;
+	z-index: 200; /* ��� ������������� ����� �������� �� ������ */
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=55);
+	-moz-opacity: 0.55;
+	-khtml-opacity: 0.55;
+	opacity: 0.55;
+	display:none;
+}
+* html #site-overlay {
+	position: absolute;
+	display:none;
+	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + "px");
+}
+
+/********* Button ***********/
+.site-button-area {
+	margin:25px 15px 10px 0;
+	text-align:left;
+}
+
+/*****************
+CALLBACK FORM
+*******************/
+#site-callback-form {
+	border:2px solid #6699cc;
+	width:500px;
+	display:none;
+	position:absolute;
+	z-index:500;
+	border-radius:10px;
+	background:#FFFFFF;
+}
+#site-callback-form-area {
+	padding:5px 15px 15px 15px;
+	position:relative;
+}
+
+#site-callback-form-close {
+	width:26px;
+	height:26px;
+	cursor:pointer;
+	position:absolute;
+	background:url('../images/tpl/close_window.png') left top no-repeat;
+	background-size:cover;
+	top:27px;
+	right:15px;
+}
+
+
+/********* Form styles **********/
+.site-form {
+	display:none;
+}
+
+.form-not-send {
+	color:#FF0000;
+	font-weight:bold;
+	margin:0 0 15px 0;
+	padding:0 6px 6px;
+	display:none;
+}
+
+
+#module-article-bottom {
+	margin:35px 0 0 0;
+}
+
+.form-error {
+	text-align:left;
+	padding:0 0 5px 0;
+	font-weight:bold;
+	color:#FF0000;
+	display:none;
+}
+
+.form-row {
+	margin:0 0 8px 0;
+}
+
+.form-title {
+	font-family:'Ubuntu-R';
+	font-size:14px;
+	font-weight:normal;
+	text-align:left;
+	color:#6699cc;
+	margin:0 0 6px 0;
+}
+.form-title span {
+	font-size:10px;
+	font-weight:normal;
+}
+
+.form-field {
+	overflow:hidden;
+}
+.form-field input[type='text'] {
+	width:95%;
+	border-top:1px solid #bcb9b2;
+	border-bottom:1px solid #eaebe6;
+	border-left:1px solid #d8d9d4;
+	border-right:1px solid #d9d8d3;
+	background:#fafafa;
+	box-shadow:0 1px 2px #cfcbc8 inset;
+	color:#747577;
+	font-size:14px;
+	font-weight:normal;
+	font-family:'Ubuntu-R';
+	padding:5px 7px;
+}
+.form-field input[type='radio'], .form-field input[type='checkbox'] {
+	margin:0 8px 0 0;
+}
+
+.form-field-two  {
+	margin:3px 0 2px 0;
+	color:#747577;
+	font-size:14px;
+	font-weight:normal;
+	font-family:'Ubuntu-R';
+}
+.form-field-two input[type='checkbox'] {
+	margin:0 8px 0 25px;
+}
+.form-field input:focus {
+	background:#ededed;
+}
+.form-field select {
+	border-top:1px solid #bcb9b2;
+	border-bottom:1px solid #eaebe6;
+	border-left:1px solid #d8d9d4;
+	border-right:1px solid #d9d8d3;
+	background:#fafafa;
+	box-shadow:0 1px 2px #cfcbc8 inset;
+	color:#747577;
+	font-size:14px;
+	font-weight:normal;
+	font-family:'Ubuntu-R';
+}
+.form-field select:focus {
+	background:#ededed;
+}
+
+.form-field label {
+	margin:0 10px 0 0;
+	color:#747577;
+	font-size:14px;
+	font-weight:normal;
+	font-family:'Ubuntu-R';
+}
+
+.form-field textarea {
+	width:95%;
+	height:80px;
+	border-top:1px solid #bcb9b2;
+	border-bottom:1px solid #eaebe6;
+	border-left:1px solid #d8d9d4;
+	border-right:1px solid #d9d8d3;
+	background:#fafafa;
+	box-shadow:0 1px 2px #cfcbc8 inset;
+	color:#747577;
+	font-size:14px;
+	font-weight:normal;
+	font-family:'Ubuntu-R';
+	padding:5px 7px;
+}
+.form-field textarea:focus {
+	background:#ededed;
+}
+
+.form-field input.price {
+	width:30%;
+	margin:0 10px 0 0;
+}
+
+#contract-cost {
+
+}
+
+.req-service-type {
+	text-align:center;
+	color:#663333;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:underline;
+	margin:15px 0 12px 0;
+}
+.req-service-desc {
+	text-align:left;
+	color:#666666;
+	font-size:12px;
+	padding:10px 0 10px 40px;
+}
+
+
+.extra-field {
+	padding:6px 8px 8px 50px;
+	display:none;
+}
+.extra-field textarea {
+	width:100%;
+	height:50px;
+	border-top:1px solid #bcb9b2;
+	border-bottom:1px solid #eaebe6;
+	border-left:1px solid #d8d9d4;
+	border-right:1px solid #d9d8d3;
+	background:#fafafa;
+	box-shadow:0 1px 2px #cfcbc8 inset;
+	color:#747577;
+	font-size:12px;
+	font-weight:normal;
+	font-family:'Ubuntu-R';
+}
+.extra-field textarea:focus {
+	background:#fff1ce;
+}
+
+.only-city {
+	display:none;
+}
+
+#rst-2 {
+	display:none;
+}
+
+.show-extra-block {
+	display:block;
+}
+
+#extra-text {
+	padding:10px 25px 15px;
+	color:#0080C0;
+}

@@ -1,0 +1,68 @@
+.image-field-area {
+	padding:15px 0 0 0;
+}
+.image-field-area img.im {
+	height:100px;
+	width:auto;
+	padding:0;
+	margin:0;
+	border:5px solid #C0C0C0;
+}
+
+.image-field-area .image-each-block {
+	float:left;
+	padding:0;
+	margin:0 10px 10px 0;
+	position:relative;
+}
+
+.image-field-area .image-each-block .icon-area {
+	padding:0;
+	margin:0;
+	position:absolute;
+	right:12px;
+	top:5px;
+}
+.image-field-area .image-each-block .icon-area .icon-block {
+	background:#E4E4E4;
+	border:1px solid #BCBCBC;
+	border-radius:3px;
+	float:right;
+	padding:0;
+	margin:0 0 0 2px;
+}
+.image-field-area .image-each-block .icon-area .icon-block img {
+	border:none;
+	margin:0;
+}
+.image-field-area .image-each-block .icon-area .hide-def {
+	display:none;
+}
+.image-field-area .image-each-block:hover .icon-area .hide-def {
+	display:block;
+}
+.image-each-block img{
+    max-width: 500px;
+}
+.hid, #message-shadow, .message-hid{
+    display: none;
+}
+.message-tab:first-child input{
+    margin-left: 13px;
+}
+.message-tab:first-child .button{
+    display: inline-block;
+    margin: 0;
+    background-color: #CACACA;
+    border-radius: 5px;
+    padding: 0px 4px 0px 4px;
+}
+.message-tab .head
+{
+    text-align:left;
+    font-weight:bold;
+    padding:5px 10px 5px 0px;
+    color:#000000;
+}
+
+

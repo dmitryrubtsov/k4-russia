@@ -1,0 +1,2 @@
+<div class="collage">
+</div>

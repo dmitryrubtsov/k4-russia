@@ -1,0 +1,2 @@
+<a href="#" onclick="document.getElementById('{$divId}').style.display='block';return false;">{$lang.admin.show}</a>&nbsp;&nbsp;
+<a href="#" onclick="document.getElementById('{$divId}').style.display='none';return false;">{$lang.admin.hide}</a><br /><br />

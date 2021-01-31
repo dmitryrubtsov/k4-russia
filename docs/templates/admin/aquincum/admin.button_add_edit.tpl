@@ -1,0 +1,6 @@
+<li>
+	<a href="#" title="{if $Item.$WorkTableKeyFieldName == '' || $showAddNewForm neq ''}{$lang.admin.addButton}{else}{$lang.admin.editButton}{/if}" class="tipN" onClick="document.forms['{$Config.AddFormName}'].act.value='{if $Item.$WorkTableKeyFieldName == '' || $showAddNewForm neq ''}addnew{else}edititem{/if}';{if $FLAGS.ContentOnly eq 'y'}parent.$.fancybox.close();{/if}document.forms['{$Config.AddFormName}'].submit();window.parent.$.prettyPhoto.close(); return false;" >
+		<img src="{$HOST}{$Config.MainImageFolder}{$Config.adminImageFolder}{$Config.adminTheme}/icons/middlenav/{if $Item.$WorkTableKeyFieldName == '' || $showAddNewForm neq ''}add_ico.png{else}save_ico.png{/if}" alt="" />
+	</a>
+</li>
+{*<input class="button" type="button" value="{if $Item.$WorkTableKeyFieldName == '' || $showAddNewForm neq ''}{$lang.admin.addButton}{else}{$lang.admin.editButton}{/if}" onClick="document.forms['{$Config.AddFormName}'].act.value='{if $Item.$WorkTableKeyFieldName == '' || $showAddNewForm neq ''}addnew{else}edititem{/if}';document.forms['{$Config.AddFormName}'].submit();" />*}

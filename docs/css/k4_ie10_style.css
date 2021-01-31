@@ -1,0 +1,33 @@
+#top-nav ul li a{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    padding: 15px 7px 15px 7px;
+
+}
+
+.head-content .head-column-contacts p.phone{
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 25px;
+}
+
+.content .proj-list .item-prev div.pr-text {
+    display: table-cell;
+    vertical-align: middle;
+    color: #1C62A2;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.content .proj-list .item .item-head{
+    padding-bottom: 15px;
+}
+a img {
+    border: none; /* Убираем рамку */
+}

@@ -1,0 +1,26 @@
+Options -Indexes
+
+DirectoryIndex index.php
+ErrorDocument 404 /index.php?act=error
+RewriteEngine on
+
+RewriteBase /
+
+RewriteRule ^style.css$ index.php?act=style.css [L]
+RewriteRule ^sitemap.xml$ index.php?act=sitemap.xml [L]
+RewriteRule ^iepngfix.htc$ index.php?act=iepngfix.htc [L]
+
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !^/code/
+RewriteCond %{REQUEST_URI} !^/languages/
+RewriteCond %{REQUEST_URI} !^/libs/
+RewriteCond %{REQUEST_URI} !^/resources/cached/
+RewriteCond %{REQUEST_URI} !^/resources/compile/
+RewriteCond %{REQUEST_URI} !^/templates/
+RewriteRule ^.*$ - [NC,L]
+
+
+RewriteRule ^.*$ index.php [NC,L]

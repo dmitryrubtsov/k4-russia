@@ -1,0 +1,517 @@
+@font-face{
+    font-family: 'PragmaticaLightC';
+    src: url('../fonts/PragmaticaLightC.eot');
+    src: url('../fonts/PragmaticaLightC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PragmaticaLightC.woff') format('woff'),
+        url('../fonts/PragmaticaLightC.ttf') format('truetype'),
+        url('../fonts/PragmaticaLightC.svg#webfont') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header, nav, section, article, aside, footer {
+    display: block;
+}
+
+
+div {
+    padding: 0;
+    margin: 0;
+    font-family:arial;
+    font-size:12px;
+    font-weight: normal;
+    color:#666666;
+}
+
+p {
+    padding:0;
+    margin:0 0 27px 0;
+    font-family:arial;
+    font-size:12px;
+    font-weight:normal;
+    line-height:200%;
+}
+
+.clear {
+    clear: both;
+}
+
+/*********************
+STRUCTURE
+*********************/
+div#page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+div#wrap {
+    min-width:320px;
+    padding-bottom:181px;
+}
+footer {
+    height:181px;
+    min-width:320px;
+    margin-top:-181px;
+    background: #eeeeee;
+    background: linear-gradient(to top, #e8e8e8, #eeeeee);
+}
+
+/************************
+HEADER
+************************/
+header {
+    height:179px;
+    min-width:320px;
+    padding:0;
+    margin:0;
+    background:#FFFFFF;
+}
+#header-area {
+    width:988px;
+    margin:0 auto;
+}
+#header-logo {
+    width:43%;
+    float:left;
+    padding:48px 0 0 0;
+}
+#header-logo img {
+    width:100%;
+    border:none;
+}
+#header-promo {
+    width:38%;
+    float:left;
+    background:url('../images/tpl/header_promo.png') 50% 50% no-repeat;
+    height:179px;
+}
+#header-gate {
+    width:17%;
+    float:right;
+    background:url('../images/tpl/gate_ico.png') right top no-repeat;
+    background-size:contain;
+    margin:52px 0 0 0;
+}
+#header-gate-area {
+    padding:25px 86px 25px 0px;
+    text-align:right;
+}
+#header-gate a {
+    color:#333333;
+    font-size:14px;
+    font-family:verdana;
+    text-transform:lowercase;
+    text-decoration:none;
+    border-right:2px solid #333333;
+    padding:0 10px 0 0;
+}
+#header-gate a:hover {
+    text-decoration:underline;
+}
+
+
+
+/************************
+FOOTER
+************************/
+#footer-area {
+    width:988px;
+    margin:0 auto;
+}
+#footer-logo {
+    width:26%;
+    float:left;
+    padding:53px 0 0 0;
+}
+#footer-logo img {
+    width:100%;
+    border:none;
+}
+#footer-copy {
+    float:left;
+    width:43%;
+}
+#footer-copy-area {
+    text-align:center;
+    color:#666666;
+    font-size:11px;
+    font-family:verdana;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    padding:67px 90px 0;
+    line-height:180%;
+}
+#footer-copy-area a {
+    color:#666666;
+    font-size:11px;
+    font-family:verdana;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+#footer-copy-area span {
+    white-space:nowrap;
+}
+#footer-info {
+    width:30%;
+    float:right;
+    background:url('../images/tpl/phone_ico.png') left 63px no-repeat;
+    /*
+    background-size:contain;
+    margin:52px 0 0 0;
+    */
+}
+#footer-info-area {
+    padding:48px 0 0 80px;
+    text-align:left;
+    color:#333333;
+    font-size:12px;
+    font-family:verdana;
+    line-height:150%;
+}
+#footer-info-area span {
+    color:#d41f32;
+}
+
+/*************************
+LANDING PAGE
+*************************/
+#landing-advantage {
+    background:url('../images/tpl/landing_advantage_bg.jpg') left top no-repeat;
+    background-size: cover;
+    padding:0;
+    margin:0;
+}
+#advantage-block {
+    width:988px;
+    margin:0 auto;
+}
+#advantage-block .row-1 {
+    font-size:70px;
+    font-family:'PragmaticaLightC', Arial, sans-serif;
+    font-weight:normal;
+    color:#FFFFFF;
+    text-align:center;
+    padding:25px 0 0 0;
+}
+#advantage-block .row-2 {
+    font-size:34px;
+    font-family:'PragmaticaLightC', Arial;
+    font-weight:100;
+    color:#ff3333;
+    text-transform:uppercase;
+    text-align:center;
+    line-height:100%;
+    padding:3px 0 10px 0;
+    letter-spacing: 6px;
+}
+#advantage-block .row-3 {
+    padding:0;
+    margin:38px 0 0 0;
+}
+#advantage-block .advantage-block {
+    width:30%;
+    margin:0 5% 0 0;
+    border-top:4px solid #ff3333;
+    float:left;
+    background:url('../images/tpl/check_ico.png') 11px 26px no-repeat;
+}
+#advantage-block .advantage-block-area {
+    font-size:14px;
+    font-family:verdana, sans-serif;
+    color:#FFFFFF;
+    text-align:left;
+    padding:28px 20px 20px 72px;
+}
+#advantage-block .advantage-block.last {
+    margin:0;
+}
+
+#landing-registration {
+    background: #eeeeee;
+    background: linear-gradient(to top, #e3e3e3, #eeeeee);
+    border-bottom:1px solid #d4d4d4;
+}
+#registration-block {
+    width:956px;
+    margin:0 auto;
+    padding:13px 0 30px 0;
+}
+.registration-block-text {
+    text-align:left;
+    color:#000000;
+    font-size:14px;
+    font-family:verdana, sans-serif;
+    padding:0 0 12px 0;
+}
+.registration-block-form .reg-field {
+    width:30%;
+    margin:0 5% 0 0;
+    float:left;
+    padding:0;
+}
+.registration-block-form .reg-field input {
+    width:100%;
+    border-left:1px solid #d9d8d4;
+    border-right:1px solid #d9d8d4;
+    border-top:1px solid #bcb9b3;
+    background:#fafafa;
+    padding:7px 7px 8px;
+    line-height:100%;
+    margin:0;
+    font-family:verdana, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    color:#999999;
+    box-shadow: inset 0 2px 2px #d5d3cf;
+    -webkit-box-shadow: inset 0 2px 2px #d5d3cf;
+    -moz-box-shadow: inset 0 2px 2px #d5d3cf;
+}
+.registration-block-form .reg-button {
+    width:30%;
+    margin:0;
+    float:right;
+    padding:0;
+}
+.registration-block-form .regi-button {
+    width:100%;
+    display:block;
+    background:url('../images/tpl/regi_button_bg.jpg') left top no-repeat;
+    background-size:cover;
+    padding:4px 0 5px;
+    text-align:center;
+    font-family:verdana, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#FFFFFF;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+#landing-steps {
+    background:#FFFFFF;
+}
+#landing-steps-block {
+    width:988px;
+    margin:0 auto 35px;
+}
+#steps-title {
+    text-align:center;
+    color:#333333;
+    font-family:arial, sans-serif;
+    font-size:30px;
+    font-weight:bold;
+    margin:32px 0 38px;
+}
+#steps-block {
+    margin:0;
+    width:100%;
+}
+#steps-block .step-block {
+    width:31%;
+    margin:0 4% 0 0;
+    float:left;
+}
+#steps-block .step-block.last {
+    margin:0;
+    width:30%;
+}
+#steps-block .step-block-pict {
+    margin:0;
+}
+#steps-block .step-block-pict img {
+    max-width:55%;
+}
+#steps-block .step-block-text {
+    padding:0 0 21px 0;
+    margin:22px 0 25px 0;
+    border-bottom:4px solid #ff3333;
+}
+#steps-block .step-block-text p {
+    text-align:center;
+    color:#333333;
+    font-family:verdana, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    line-height:120%;
+    padding:0;
+    margin:0;
+}
+#steps-block .step-block-number span {
+    width:36px;
+    height:36px;
+    display:block;
+    margin:0 auto;
+    border-radius:22px;
+    -moz-border-radius:22px;
+    -webkit-border-radius:22px;
+    -khtml-border-radius:22px;
+    color:#333333;
+    font-family:verdana, sans-serif;
+    font-size:20px;
+    font-weight:normal;
+    line-height:36px;
+    text-align:center;
+    border:4px solid #333333;
+
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 988px) {
+    #header-area {
+        width:100%;
+    }
+    #advantage-block {
+        width:100%;
+    }
+    #registration-block {
+        width:96%;
+    }
+    #landing-steps-block {
+        width:100%;
+    }
+    #footer-area {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header-logo {
+        width:60%;
+        float:left;
+        padding:48px 0 0 0;
+    }
+    #header-promo {
+        display:none;
+    }
+    #header-gate {
+        width:35%;
+        float:right;
+    }
+
+    #advantage-block .row-1 {
+        font-size:50px;
+        padding:15px 0 0 0;
+    }
+    #advantage-block .row-2 {
+        font-size:26px;
+        padding:2px 0 10px 0;
+        letter-spacing:4px;
+    }
+    #advantage-block .row-3 {
+        margin:28px 0 0 0;
+    }
+
+
+    #footer-logo {
+        width:48%;
+        padding:30px 0 0 0;
+    }
+    #footer-info {
+        width:48%;
+        background:url('../images/tpl/phone_ico.png') left 35px no-repeat;
+    }
+    #footer-info-area {
+        padding:20px 0 0 80px;
+    }
+    #footer-copy {
+        width:100%;
+    }
+    #footer-copy-area {
+        padding:15px 20px 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #advantage-block .row-1 {
+        font-size:30px;
+        padding:15px 0 0 0;
+    }
+    #advantage-block .row-2 {
+        font-size:16px;
+        padding:5px 0 10px 0;
+        letter-spacing:3px;
+    }
+    #advantage-block .row-3 {
+        margin:15px 0 0 0;
+    }
+    #advantage-block .advantage-block {
+        width:90%;
+        margin:2% 5%;
+        background:url('../images/tpl/check_ico.png') 11px 14px no-repeat;
+    }
+    #advantage-block .advantage-block-area {
+        font-size:14px;
+        font-family:verdana, sans-serif;
+        color:#FFFFFF;
+        text-align:left;
+        padding:20px 20px 20px 72px;
+    }
+    #advantage-block .advantage-block.last {
+        margin:2% 5%;
+    }
+
+    .registration-block-form .reg-field {
+        width:80%;
+        margin:0 10% 5%;
+        float:left;
+        padding:0;
+    }
+    .registration-block-form .reg-button {
+        width:80%;
+        margin:0 10% 5%;
+        float:left;
+        padding:0;
+    }
+
+
+    #footer-info {
+        width:100%;
+        background:url('../images/tpl/phone_ico.png') 50px 35px no-repeat;
+        float:left;
+    }
+    #footer-info-area {
+        padding:20px 0 0 130px;
+    }
+    #footer-logo {
+        width:48%;
+        padding:20px 0 0 0;
+    }
+    #footer-copy {
+        width:48%;
+    }
+    #footer-copy-area {
+        padding:15px 15px 0;
+    }
+    #footer-copy-area span {
+        white-space:normal;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 480px) {
+
+}
+
+
+.clear {
+    clear:both;
+}

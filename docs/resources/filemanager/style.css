@@ -1,0 +1,438 @@
+/*
+ * DF-FileManager
+ * Version: 1.0 (3/06/2010)
+ * Copyright (c) 2010 Dmytro Feshchenko www.df-studio.net
+ * Licensed under the MIT License: http://en.wikipedia.org/wiki/MIT_License
+*/
+
+body
+{
+  margin:0px;
+  padding:0px;
+  font-family:tahoma,verdana;
+  font-weight:normal;
+  font-size:13px;
+  background:#ffffff;
+  color:#6A6A6A;
+}
+
+table
+{
+  padding:0px;
+  margin:0px;
+  border-collapse:collapse;
+  border-spacing:0px;
+}
+
+td
+{
+  padding:0px;
+  margin:0px;
+  text-align:left;
+  vertical-align:top;
+  font-family:tahoma,verdana,tahoma;
+  font-size:13px;
+  color:#6A6A6A;
+}
+
+input,textarea,select
+{
+  font-family:tahoma,verdana;
+  font-size:13px;
+}
+
+ul
+{
+  list-style:disc inside;
+}
+
+form
+{
+  margin:0px;
+}
+
+a
+{
+  text-decoration:underline;
+  color:#6A6A6A;
+}
+a:hover
+{
+  text-decoration:none;
+  color:#2B72C8;
+}
+
+a.action
+{
+  cursor:pointer;
+  display:inline-block;
+  padding:5px 10px 5px 10px;
+  margin:0px 3px 0px 3px;
+  font-size:13px;
+  font-weight:bold;
+  color:#6A6A6A;
+  background:url(images/gradient.png) left -20px repeat-x #5EB4F0;
+  border:1px solid #5EB4F0;
+  text-decoration:none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+a.action:hover
+{
+  background:url(images/gradient.png) left -5px repeat-x #5EB4F0;
+}
+a.action img
+{
+  border:0px;
+  margin:0px 7px 0px 0px;
+  padding:0px;
+  width:16px;
+  height:16px;
+}
+a.lang
+{
+  cursor:pointer;
+  display:inline-block;
+  padding:5px;
+  margin:1px;
+  background:url(images/gradient.png) left -20px repeat-x #5EB4F0;
+  border:1px solid #5EB4F0;
+  text-decoration:none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+a.lang:hover
+{
+  background:url(images/gradient.png) left -5px repeat-x #5EB4F0;
+}
+a.lang img
+{
+  border:0px;
+  margin:0px;
+  padding:0px;
+  width:16px;
+  height:16px;
+}
+
+div#maintdiv
+{  min-width:800px;
+  display:none;
+}
+
+table#maintable
+{  width:100%;
+}
+table#maintable td#maintabletd
+{  padding:10px;
+}
+div.buttons
+{  padding:10px;
+  background:#E9F2F8;
+  border:1px solid #5EB4F0;
+}
+div.buttons table
+{
+  width:90%;
+}
+div.buttons table td
+{  vertical-align:middle;
+}
+div.buttons table td.space
+{
+  padding:0px 10px 0px 0px;
+  width:200px;
+}
+div.buttons table td.bttns
+{
+  padding:0px 0px 0px 10px;
+}
+div.error
+{  padding:10px;
+  font-weight:bold;
+  color:#F24B0D;
+}
+div.spaceinf
+{
+  font-size:11px;
+}
+div.space_limit
+{
+  display:inline-block;
+  margin:2px 0px 2px 0px;
+  padding:0px;
+  height:15px;
+  border:1px solid #5EB4F0;
+  background:#F7FBFD;
+  overflow:hidden;
+  border-radius:7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+}
+div.space_used
+{
+  height:15px;
+  background:url(images/gradient.png) left -90px repeat-x #5EB4F0;
+  border-radius:6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+}
+div.space_info
+{
+  padding:0px;
+  margin:0px;
+  text-align:center;
+  font-weight:bold;
+  z-index:5;
+  position:relative;
+  top:-16px;
+}
+div#copy
+{
+  padding:10px;
+  font-size:11px;
+}
+
+div#path
+{
+  padding:10px;
+  border:1px solid #5EB4F0;
+  border-top:0px;
+  background:url(images/gradient.png) left -60px repeat-x #5EB4F0;
+  font-weight:bold;
+  font-size:13px;
+}
+select#filter
+{
+  margin:0px 10px 0px 5px;
+  padding:2px;
+  border:1px solid #5EB4F0;
+  background:#E9F2F8;
+  font-size:11px;
+  font-weight:normal;
+}
+div#path a
+{
+  cursor:pointer;
+  text-decoration:none;
+  color:#484848;
+}
+div#path a:hover
+{
+  color:#F5F9FC;
+}
+div#content
+{  background:#F7FBFD;
+  padding:10px;
+  border:1px solid #5EB4F0;
+  border-bottom:0px;
+  border-top:0px;
+  height:300px;
+  overflow:auto;
+}
+div#content table
+{  width:100%;
+}
+div#content table tr.hover
+{
+  background:#E9F2F8;
+}
+div#content table td
+{
+  padding:3px 10px 3px 10px;
+  vertical-align:middle;
+}
+div#content table td a
+{
+  cursor:pointer;
+}
+div#content table td.file, div#content table td.folder
+{  width:50%;
+  cursor:pointer;
+  /*text-decoration:underline;*/
+}
+div#content table td.file:hover, div#content table td.folder:hover
+{
+  font-weight:bold;
+  text-decoration:none;
+}
+div#content table td.size, div#content table td.date
+{
+  width:100px;
+  padding:0px 5px 0px 5px;
+  font-weight:normal;
+  font-size:11px;
+  text-decoration:none;
+  text-align:right;
+}
+div#content table td.file img, div#content table td.folder img
+{
+  margin-right:7px;
+  border:0px;
+  height:16px;
+  width:16px;
+}
+
+a.delf, a.delfd, a.viewf
+{
+  cursor:pointer;
+  display:inline-block;
+  padding:3px;
+  margin:0px 3px 0px 3px;
+  font-size:11px;
+  font-weight:bold;
+  color:#ffffff;
+  background:url(images/gradient.png) left -40px repeat-x #5EB4F0;
+  border:1px solid #5EB4F0;
+  text-decoration:none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+a.delf:hover, a.delfd:hover, a.viewf:hover
+{
+  background:url(images/gradient.png) left -25px repeat-x #5EB4F0;
+}
+a.delf img, a.delfd img, a.viewf img
+{
+  border:0px;
+  margin:0px;
+  padding:0px;
+  width:12px;
+  height:12px;
+}
+
+div.dialogbox
+{
+  display:none;
+}
+div.dialogbox div.dbox_bx
+{
+  display:none;
+  position:fixed;
+  width:300px;
+  border:1px solid #5EB4F0;
+  background:#FFFFFF;
+  padding:1px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+div.dialogbox div.dbox_sh
+{
+  background:#000000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+div.dialogbox div.dbox_bx div
+{
+  padding:7px;
+  font-size:11px;
+}
+div.dialogbox div.dbox_bx div.dbox_t
+{
+  background:url(images/gradient.png) left -110px repeat-x #5EB4F0;
+  color:#FFFFFF;
+  font-size:12px;
+  font-weight:bold;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  -webkit-border-top-left-radius: 9px;
+  -moz-border-radius-topleft: 9px;
+  -webkit-border-top-right-radius: 9px;
+  -moz-border-radius-topright: 9px;
+}
+div.dialogbox div.dbox_bx div.dbox_bt
+{
+  text-align:center;
+}
+div.dialogbox div.dbox_bx div.dbox_bt a
+{
+  display:inline-block;
+  padding:3px 10px 3px 10px;
+  margin:0px 5px 0px 5px;
+  cursor:pointer;
+  background:url(images/gradient.png) left -110px repeat-x #5EB4F0;
+  border:1px solid #5EB4F0;
+  color:#FFFFFF;
+  font-size:11px;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+div.dialogbox div.dbox_bx div.dbox_bt a:hover
+{
+  background:url(images/gradient.png) left -90px repeat-x #5EB4F0;
+}
+
+div.dialogbox_err
+{
+  display:none;
+}
+div.dialogbox_err div.dbox_bx
+{
+  display:none;
+  position:fixed;
+  width:300px;
+  border:1px solid #E13F1C;
+  background:#FFFFFF;
+  padding:1px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+div.dialogbox_err div.dbox_sh
+{
+  background:#000000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+div.dialogbox_err div.dbox_bx div
+{
+  padding:7px;
+  font-size:11px;
+}
+div.dialogbox_err div.dbox_bx div.dbox_t
+{
+  background:url(images/gradient.png) left -110px repeat-x #E13F1C;
+  color:#FFFFFF;
+  font-size:12px;
+  font-weight:bold;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  -webkit-border-top-left-radius: 9px;
+  -moz-border-radius-topleft: 9px;
+  -webkit-border-top-right-radius: 9px;
+  -moz-border-radius-topright: 9px;
+}
+div.dialogbox_err div.dbox_bx div.dbox_bt
+{
+  text-align:center;
+}
+div.dialogbox_err div.dbox_bx div.dbox_bt a
+{
+  display:inline-block;
+  padding:3px 10px 3px 10px;
+  margin:0px 5px 0px 5px;
+  cursor:pointer;
+  background:url(images/gradient.png) left -110px repeat-x #E13F1C;
+  border:1px solid #E13F1C;
+  color:#FFFFFF;
+  font-size:11px;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+div.dialogbox_err div.dbox_bx div.dbox_bt a:hover
+{
+  background:url(images/gradient.png) left -90px repeat-x #E13F1C;
+}
