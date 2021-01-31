@@ -218,8 +218,8 @@ $tpl->assign('FALSE', __FALSE);
 $tpl->assign('ERROR', __ERROR);
 $EnableFilter = false;
 $tpl->assign_by_ref('EnableFilter', $EnableFilter);
-$HOST = $CONFIG['SiteProtocol']."://".$CONFIG['SiteDomain'].'/';
-$tpl->assign('HOST', $CONFIG['SiteProtocol']."://".$CONFIG['SiteDomain'].'/');
+$HOST = '/';
+$tpl->assign('HOST', '/');
 
 $Query = array();
 $Query['FromTables'] = "";

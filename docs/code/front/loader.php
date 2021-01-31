@@ -73,9 +73,8 @@ require_once __CFG_PATH_LIBS . __CFG_PATH_CORE . "languages.php";
 
 $pct->setLanguage(__LANG);
 
-$HOST = $CONFIG['SiteProtocol'] . "://" . $CONFIG['SiteDomain'];
+$HOST = '/';
 $BaseURL = $HOST . getPath();
-$HOST .= "/";
 
 $languageLink = ($CONFIG['EnableMultiLanguage'] == 'y') ? '/'.__LANG : '' ;
 
