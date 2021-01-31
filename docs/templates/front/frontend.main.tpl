@@ -16,7 +16,7 @@
     <!--[if IE 8]>
     <link rel="stylesheet" type="text/css" href="{$HOST}css/k4_ie10_style.css">
     <![endif]-->
-    <link href='fonts.googleapis.com/css?family=Exo+2:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     {literal}
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
