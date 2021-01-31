@@ -2,7 +2,10 @@ Options -Indexes
 
 DirectoryIndex index.php
 ErrorDocument 404 /index.php?act=error
-RewriteEngine on
+
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RewriteBase /
 
